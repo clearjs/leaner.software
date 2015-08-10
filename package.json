@@ -9,9 +9,9 @@
     "url": "https://github.com/clearjs/leaner.software.git"
   },
   "private": true,
-  "main": "./src/start.js",
+  "main": "babel.server.js",
   "scripts": {
-    "start": "NEW_BASE_URL=https://twitter.com/leanersoftware node src/start.js",
+    "start": "NEW_BASE_URL=https://twitter.com/leanersoftware node babel.server.js",
     "test": "npm run lint",
     "lint": "eslint src"
   },
