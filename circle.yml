@@ -1,0 +1,15 @@
+test:
+  override:
+    - npm test
+deployment:
+  development:
+    branch: dev
+    heroku:
+      appname: dev-leaner
+  production:
+    branch: master
+    heroku:
+      appname: leanersoftware
+machine:
+  node:
+    version: iojs-v2

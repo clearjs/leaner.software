@@ -1,0 +1,33 @@
+{
+  "name": "leaner.software",
+  "description": "Source code for https://leaner.software",
+  "version": "0.0.1",
+  "author": "Roman Boiko <rb@clearjs.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clearjs/leaner.software.git"
+  },
+  "private": true,
+  "main": "./src/start.js",
+  "scripts": {
+    "start": "NEW_BASE_URL=https://twitter.com/leanersoftware node src/start.js",
+    "test": "npm run lint",
+    "lint": "eslint src"
+  },
+  "engines": {
+    "iojs": "2.x"
+  },
+  "dependencies": {
+    "babel": "5.x",
+    "babel-core": "5.x",
+    "debug": "2.x",
+    "koala": "1.x"
+  },
+  "devDependencies": {
+    "babel-eslint": "4.x",
+    "eslint": "1.x",
+    "eslint-config-airbnb": "*",
+    "eslint-plugin-react": "3.x"
+  }
+}
